@@ -2018,7 +2018,7 @@ client.on('message' , message => {
        .setAuthor(message.author.username, message.author.avatarURL)
        .setDescription('📬 تم ارسال الرسالة الى صاحب البوت بنجاح')
        .setThumbnail(message.author.avatarURL)
-       .setFooter("ScriptBot | System")
+       .setFooter("Muders | System")
                                                   
   
   message.channel.send(embed);
@@ -2071,7 +2071,7 @@ client.on("guildMemberAdd", member => {
         .setTitle('❌ | تمت معاقبتك')
         .setAuthor(message.author.username, message.author.avatarURL)
         .addField(`** لقد قمت بمخالفة قوانين السيرفر من خلال نشر روابط اضافة الى سيرفرات اخرى  **` , `**ملاحظة  : إن كآن هذآ الاسكات عن طريق الخطأ الرجاء التوجه والتكلم مع الادآرة**`)
-        .addField(`by`,`LegendSystem. `)
+        .addField(`by`,` Mo3GzZa#6613 `)
         .setColor('RED')
         .setThumbnail(message.author.avatarURL)
         .setFooter(`${message.guild.name} Server`, message.guild.iconURL)
@@ -2125,8 +2125,8 @@ client.on('message', message => {
             .addField('``Users``' ,`[ ${client.users.size} ]` , true)
             .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
-                  .addField('``My Prefix``' , `[ - ]` , true)
-                  .addField('``My Language``' , `[ Java Script ]` , true)
+                  .addField('``Owner Bot``' , `[ - ]` , true)
+                  .addField('`` Mo3GzZa ``' , `[ Java Script ]` , true)
     })
 }
 });
@@ -3665,7 +3665,7 @@ reaction1.on("collect", r => {
 『-contact ====> للتواصل مع صاحب البوت
 『-clan ====> لعبة الكلانات
 『-report ====> للابلاغ عن احد
-『-Minv ====> لمعرفة عدد دعواتك
+『-inv ====> لمعرفة عدد دعواتك
 『-color ====> لوضع لون لك
 『-emojilist ====> لرؤية قائمة اموجيات السيرفر
 『-date ====> يعرضلك تاريخ اليوم
@@ -3680,7 +3680,6 @@ reaction1.on("collect", r => {
 『-embed ====> يكرر الي تقولو بشكل حلو
 『-rules ====> يعرض لك قوانين السيرفر
 『-v2min ====> لصنع روم صوتي مؤقت
-『-inv ====> لدعوة البوت الى سيرفرك
 『 By ====> Mo3GzZa#6613 
 **
 `)
@@ -4033,7 +4032,7 @@ if (message.content.startsWith(prefix + 'perms')) {
 
  client.on("message", async message => {
             if(!message.channel.guild) return;
-        if(message.content.startsWith(prefix + 'Minv')) {
+        if(message.content.startsWith(prefix + '-inv')) {
         var nul = 0
         var guild = message.guild
         await guild.fetchInvites()

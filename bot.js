@@ -722,7 +722,7 @@ const pics = JSON.parse(fs.readFileSync('./pics.json' , 'utf8'));
       if(!room) return message.channel.send('Please Type The Channel Name')
       if(!findroom) return message.channel.send('Cant Find This Channel')
       let embed = new Discord.RichEmbed()
-      .setTitle('**Done The MediaOnly Code Has Been Setup**')
+      .setTitle('**Done The Muders Code Has Been Setup**')
       .addField('Channel:', `${room}`)
       .addField('Requested By', `${message.author}`)
       .setThumbnail(message.author.avatarURL)
@@ -747,8 +747,8 @@ const pics = JSON.parse(fs.readFileSync('./pics.json' , 'utf8'));
       if(!pics[message.guild.id]) pics[message.guild.id] = {
         onoff: 'Off'
       }
-        if(pics[message.guild.id].onoff === 'Off') return [message.channel.send(`**The MediaCode Is __𝐎𝐍__ !**`), pics[message.guild.id].onoff = 'On']
-        if(pics[message.guild.id].onoff === 'On') return [message.channel.send(`**The MediaCode Is __𝐎𝐅𝐅__ !**`), pics[message.guild.id].onoff = 'Off']
+        if(pics[message.guild.id].onoff === 'Off') return [message.channel.send(`**The Muders �𝐍__ !**`), pics[message.guild.id].onoff = 'On']
+        if(pics[message.guild.id].onoff === 'On') return [message.channel.send(`**The Muders �𝐅𝐅__ !**`), pics[message.guild.id].onoff = 'Off']
         fs.writeFile("./pics.json", JSON.stringify(pics), (err) => {
           if (err) console.error(err)
           
@@ -776,7 +776,7 @@ const pics = JSON.parse(fs.readFileSync('./pics.json' , 'utf8'));
   ]
    if (message.attachments.size <= 0) {
     message.delete();
-    message.channel.send(`${message.author}, This Channel For Media 🖼️ Only !`) 
+    message.channel.send(`${message.author}, This Channel For Muders `) 
     .then(msg => {
       setTimeout(() => {
         msg.delete();
@@ -875,7 +875,7 @@ client.on('ready', function(){
         if( i == -1 ){
             j = 1;
         }
-        if( i == (setGame.length)-1 ){
+        if( i == (setGame.length-1 ){
             j = -1;
         }
         i = i+j;
